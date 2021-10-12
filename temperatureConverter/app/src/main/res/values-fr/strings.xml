@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" Convertisseur de température"</string>
+    <string name="celsiusView">Celsius</string>
+    <string name="fahrenheitView">" Fahrenheit"</string>
+    <string name="swim">" Il est temps d'aller nager !"</string>
+    <string name="ski">" Il est temps d'aller skier !"</string>
+</resources>

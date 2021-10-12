@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Results">
+
+    <TextView
+        android:id="@+id/txtWellDone"
+        android:layout_width="437dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="73dp"
+        android:gravity="center"
+        android:text="Well Done!"
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/dividerResults"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/dividerResults"
+        android:layout_width="203dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="61dp"
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/btnRetry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWellDone" />
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:text="Retry"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerResults" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRetry" />
+</androidx.constraintlayout.widget.ConstraintLayout>

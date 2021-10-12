@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">temperatureConverter</string>
+    <string name = "celsiusView">Celsius</string>
+    <string name = "fahrenheitView">Fahrenheit</string>
+    <string name = "swim">Time to go swimming!</string>
+    <string name = "ski">Time to go skiing!</string>
+</resources>

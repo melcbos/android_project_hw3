@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MathQuestions">
+
+    <TextView
+        android:id="@+id/txtQuestionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtQuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/txtQuestionLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtOp1"
+        android:layout_width="198dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="105dp"
+        android:gravity="center"
+        android:text="144"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtQuestionNumber" />
+
+    <TextView
+        android:id="@+id/txtOp2"
+        android:layout_width="198dp"
+        android:layout_height="71dp"
+        android:gravity="center"
+        android:text="12"
+        android:textSize="50dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtOperator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtAnswer"
+        android:layout_width="198dp"
+        android:layout_height="71dp"
+        android:gravity="center"
+        android:hint="Answer"
+        android:textSize="30dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtOperator"
+        android:layout_width="49dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="109dp"
+        android:gravity="center"
+        android:text="X"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etxtAnswer"
+        app:layout_constraintEnd_toStartOf="@+id/txtOp2"
+        app:layout_constraintTop_toTopOf="@+id/txtOp1" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="29dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/etxtAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="197dp"
+        android:layout_marginBottom="197dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOp2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="410dp"
+        android:layout_height="333dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <SeekBar
+            android:id="@+id/barTipAmount"
+            android:layout_width="317dp"
+            android:layout_height="19dp"
+            android:layout_marginEnd="16dp"
+            android:progressTint="#FFA500"
+            android:thumbTint="#FFA500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editBill" />
+
+        <TextView
+            android:id="@+id/tipPercent"
+            android:layout_width="58dp"
+            android:layout_height="19dp"
+            android:layout_marginEnd="4dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/barTipAmount"
+            app:layout_constraintTop_toBottomOf="@+id/editBill" />
+
+        <TextView
+            android:id="@+id/tipValue"
+            android:layout_width="317dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFE7C7"
+            android:text=""
+            android:hint="0.00"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barTipAmount" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="58dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/totalValue"
+            app:layout_constraintTop_toBottomOf="@+id/txtTip" />
+
+        <TextView
+            android:id="@+id/totalValue"
+            android:layout_width="317dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFE7C7"
+            android:text=""
+            android:hint="0.00"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipValue" />
+
+        <TextView
+            android:id="@+id/txtTip"
+            android:layout_width="58dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/tipValue"
+            app:layout_constraintTop_toBottomOf="@+id/tipPercent" />
+
+        <EditText
+            android:id="@+id/editBill"
+            android:layout_width="379dp"
+            android:layout_height="46dp"
+            android:background="#aedbf1"
+            android:paddingLeft="20dp"
+            android:ems="10"
+            android:hint="Enter Amount"
+            android:inputType="number"
+            android:shadowColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

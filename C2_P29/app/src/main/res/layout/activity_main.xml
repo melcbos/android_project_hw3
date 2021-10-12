@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/servingsText"
+            style="@style/LabelStyle"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:text="Number of Servings" />
+
+        <TextView
+            android:id="@+id/itemText"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Item"
+            style="@style/LabelStyle"
+
+            />
+
+        <TextView
+            android:id="@+id/caloriesText"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Calories per Serving"
+            style="@style/LabelStyle"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+        <EditText
+            android:id="@+id/servingsItem1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/saladText"
+            style="@style/textItem"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = "@string/item1"
+            />
+        <TextView
+            android:id="@+id/caloriesSalad"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = "12 cal"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/servingsItem2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/friesText"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = "@string/item2"
+            style="@style/textItem"
+            />
+        <TextView
+            android:id="@+id/caloriesFriedChicken"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = "365 cal"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/servingsItem3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/hamburgerText"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = "@string/item3"
+            style="@style/textItem"
+
+            />
+        <TextView
+            android:id="@+id/caloriesHamburger"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = "354 cal"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/servingsItem4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/friedChickenText"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = "@string/item4"
+            style="@style/textItem"
+
+            />
+        <TextView
+            android:id="@+id/caloriseFriedChicken"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = "320 cal"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/servingsitem5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/sodaText"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = "@string/item5"
+            style="@style/textItem"
+            />
+        <TextView
+            android:id="@+id/caloriesSoda"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = "150 cal"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <Button
+            android:id="@+id/calc"
+            android:layout_width="10dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="calc"
+            />
+
+        <TextView
+            android:id="@+id/caloriesTotalText"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text = "Calories Total"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/totalCalories"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text = ""
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
